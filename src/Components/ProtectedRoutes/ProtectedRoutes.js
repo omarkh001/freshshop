@@ -8,7 +8,7 @@ export default function ProtectedRoutes(props) {
         return props.children
 
     }else{
-          return  <Navigate to={"/Login"}/>
+          return  <Navigate to={"/freshshop/login"}/>
     }
 
 

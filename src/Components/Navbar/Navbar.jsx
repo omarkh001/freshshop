@@ -13,14 +13,14 @@ export default function Navbar() {
   function Logout() {
     localStorage.removeItem("userToken");
     setToken(null);
-    navigate("/Login");
+    navigate("/freshshop/login");
   }
 
   return (
     <>
       <nav className="navbar  navbar-expand-lg bg-body-tertiary">
         <div className="container">
-          <Link className="navbar-brand" to={"/Home"}>
+          <Link className="navbar-brand" to={"/freshshop/home"}>
             <img src={logo} alt="" />
           </Link>
           <button
@@ -38,7 +38,7 @@ export default function Navbar() {
             {token ? (
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 <li className="nav-item">
-                  <Link className="nav-link  " aria-current="page" to={"/Home"}>
+                  <Link className="nav-link  " aria-current="page" to={"/freshshop/home"}>
                     Home
                   </Link>
                 </li>
@@ -47,7 +47,7 @@ export default function Navbar() {
                   <Link
                     className="nav-link "
                     aria-current="page"
-                    to={"/Products"}
+                    to={"/freshshop/products"}
                   >
                     Products
                   </Link>
@@ -56,7 +56,7 @@ export default function Navbar() {
                   <Link
                     className="nav-link "
                     aria-current="page"
-                    to={"/Categories"}
+                    to={"/freshshop/categories"}
                   >
                     Categories
                   </Link>
@@ -65,7 +65,7 @@ export default function Navbar() {
                   <Link
                     className="nav-link "
                     aria-current="page"
-                    to={"/Brands"}
+                    to={"/freshshop/brands"}
                   >
                     Brands
                   </Link>
@@ -74,7 +74,7 @@ export default function Navbar() {
                   <Link
                     className="nav-link "
                     aria-current="page"
-                    to={"/wishlist"}
+                    to={"/freshshop/wishlist"}
                   >
                     Wishlist
                   </Link>
@@ -101,7 +101,7 @@ export default function Navbar() {
                     <Link
                       className="nav-link "
                       aria-current="page"
-                      to={"/Cart"}
+                      to={"/freshshop/cart"}
                     >
                       <i className="fa fa-shopping-cart text-main"></i>
                       <span className="bg-main mx-1 text-white rounded px-1">
@@ -116,7 +116,7 @@ export default function Navbar() {
                     <Link
                       className="nav-link  "
                       aria-current="page"
-                      to={"/Regester"}
+                      to={"/freshshop/regester"}
                     >
                       Regester
                     </Link>
@@ -125,7 +125,7 @@ export default function Navbar() {
                     <Link
                       className="nav-link  "
                       aria-current="page"
-                      to={"/Login"}
+                      to={"/freshshop/login"}
                     >
                       Login
                     </Link>

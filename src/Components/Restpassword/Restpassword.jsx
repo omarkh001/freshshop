@@ -14,7 +14,7 @@ export default function Restpassword() {
 
     console.log(data);
     if (data.token) {
-      navigate("/login");
+      navigate("/freshshop/login");
     }
   }
 

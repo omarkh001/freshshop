@@ -29,7 +29,7 @@ export default function Regester() {
     console.log(data);
 
     if ((data.message = "success")) {
-      navigate("/Login");
+      navigate("/freshshop/login");
     }
   }
 
