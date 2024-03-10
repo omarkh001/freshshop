@@ -34,7 +34,7 @@ const routes= createBrowserRouter([
     {path : "Checkout",element: <ProtectedRoutes><Checkout/></ProtectedRoutes>},
     {path : "Details/:id",element: <ProtectedRoutes><Details/></ProtectedRoutes>},
     {path : "allorders",element: <ProtectedRoutes><Allorders/></ProtectedRoutes>},      
-    {path : "login",path:"login", element:<Login/>},
+    {path : "login",index:true, element:<Login/>},
     {path : "regester",element:<Regester/>},
     {path : "forgetpassword",element:<Forgetpassword/>},
     {path : "restpassword",element:<Restpassword/>},
