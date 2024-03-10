@@ -41,7 +41,7 @@ export default function Forgetpassword() {
     );
 
     if (data.status == "Success") {
-      navigate("/freshshop/restpassword");
+      navigate("restpassword");
     }
     console.log(data);
   }

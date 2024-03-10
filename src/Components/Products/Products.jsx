@@ -87,7 +87,7 @@ export default function Products() {
               {data?.data?.data.map((ele) => (
                 <div key={ele.id} className="col-md-3 ">
                   <div className=" product p-2">
-                    <Link to={"/freshshop/details/" + ele.id}>
+                    <Link to={"/details/" + ele.id}>
                       <img
                         src={ele.imageCover}
                         className="w-100"

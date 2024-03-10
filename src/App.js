@@ -25,20 +25,20 @@ let {setToken}=useContext(TokenContext)
 
 const routes= createBrowserRouter([
   {path:"",element:<Layout/> ,children :[
-    {path:"freshshop/home" ,element: <ProtectedRoutes><Home/></ProtectedRoutes> },
-    {path:"freshshop/products",element: <ProtectedRoutes><Products/></ProtectedRoutes>},
-    {path:"freshshop/brands",element: <ProtectedRoutes><Brands/></ProtectedRoutes>},
-    {path:"freshshop/wishlist",element: <ProtectedRoutes><Wishlist/></ProtectedRoutes>},
-    {path:"freshshop/categories",element: <ProtectedRoutes><Categories/></ProtectedRoutes>},
-    {path:"freshshop/cart",element: <ProtectedRoutes><Cart/></ProtectedRoutes>},
-    {path:"freshshop/checkout",element: <ProtectedRoutes><Checkout/></ProtectedRoutes>},
-    {path:"freshshop/details/:id",element: <ProtectedRoutes><Details/></ProtectedRoutes>},
+    {path:"home" ,element: <ProtectedRoutes><Home/></ProtectedRoutes> },
+    {path:"products",element: <ProtectedRoutes><Products/></ProtectedRoutes>},
+    {path:"brands",element: <ProtectedRoutes><Brands/></ProtectedRoutes>},
+    {path:"wishlist",element: <ProtectedRoutes><Wishlist/></ProtectedRoutes>},
+    {path:"categories",element: <ProtectedRoutes><Categories/></ProtectedRoutes>},
+    {path:"cart",element: <ProtectedRoutes><Cart/></ProtectedRoutes>},
+    {path:"checkout",element: <ProtectedRoutes><Checkout/></ProtectedRoutes>},
+    {path:"details/:id",element: <ProtectedRoutes><Details/></ProtectedRoutes>},
     {path:"allorders",element: <ProtectedRoutes><Allorders/></ProtectedRoutes>},      
     {path:"freshshop", index:true,element:<Login/>},
-    {path:"freshshop/login",element:<Login/>},
-    {path:"freshshop/regester",element:<Regester/>},
-    {path:"freshshop/forgetpassword",element:<Forgetpassword/>},
-    {path:"freshshop/restpassword",element:<Restpassword/>},
+    {path:"login",element:<Login/>},
+    {path:"regester",element:<Regester/>},
+    {path:"forgetpassword",element:<Forgetpassword/>},
+    {path:"restpassword",element:<Restpassword/>},
     {path:"*",element:<Notfound/>},
   ]}
 ])

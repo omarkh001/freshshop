@@ -29,7 +29,7 @@ export default function Login() {
     if ((data.message = "success")) {
       localStorage.setItem("userToken", data.token);
       setToken(data.token);
-      navigate("/freshshop/home");
+      navigate("/home");
     }
   }
 
@@ -106,7 +106,7 @@ export default function Login() {
                 </div>
               </div>
 
-              <Link id="forgetpassword" className="text-main" to={"/freshshop/forgetpassword"}>
+              <Link id="forgetpassword" className="text-main" to={"/forgetpassword"}>
                 forgetpassword.....
               </Link>
 
